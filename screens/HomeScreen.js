@@ -29,15 +29,16 @@ const HomeScreen = () => {
                         fontSize: 18,
                     },
                 }}
+                minLength={2}
                 query={{
-                    key: 'AIzaSyDTVGdeXYdYSy9ocBHbb_dn0IftPQfFks8',
+                    key: GOOGLE_MAPS_APIKEY,
                     language: 'en',
                 }}
                 nearbyPlacesAPI='GooglePlacesSearch'
                 debounce={400}
             />
 
-            {/* <NavOptions /> */}
+            <NavOptions />
         </View>
     );
 };
